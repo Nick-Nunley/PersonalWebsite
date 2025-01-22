@@ -6,6 +6,7 @@ if __name__ == '__main__':
 
     # Your ORCID ID
     orcid_id = os.environ.get('ORCID')
+    print(f'ORCID is: {orcid_id}')
     # ORCID API endpoint for public data
 
     # Set headers for the API request
