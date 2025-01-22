@@ -1,0 +1,33 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Update publications
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 0 */7 * *"
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "publications"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  publications:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13' 
+      - run: |
+          pip install requests pyyaml
+          python get_publications_by_orcid.py > _data/publications.yml
+      - uses: stefanzweifel/git-auto-commit-action@v5
