@@ -55,7 +55,7 @@ def fetch_publications(orcid_id):
                 contributors = fetch_contributors(detailed_url)
 
                 publications.append({
-                    "title": title,
+                    "name": title,
                     "publication_year": pub_year,
                     "identifiers": identifiers,
                     "authors": contributors,
