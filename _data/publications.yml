@@ -1,5 +1,5 @@
-- title: Prostate lineage-specific metabolism governs luminal differentiation and
-    response to antiandrogen treatment.
+- name: Prostate lineage-specific metabolism governs luminal differentiation and response
+    to antiandrogen treatment.
   publication_year: '2023'
   identifiers:
     pmid: '38049604'
@@ -29,7 +29,7 @@
   - Paul Boutros
   - Andrew Goldstein
   url: https://doi.org/10.1038/s41556-023-01274-x
-- title: MYC is a regulator of androgen receptor inhibition-induced metabolic requirements
+- name: MYC is a regulator of androgen receptor inhibition-induced metabolic requirements
     in prostate cancer.
   publication_year: '2023'
   identifiers:
