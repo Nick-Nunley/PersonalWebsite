@@ -1,7 +1,7 @@
 title: "<strong>Nick Nunley</strong>'s Resume"
 description: "A simple online resume"
 url: "https://<your-username>.github.io/PersonalWebsite"
-baseurl: "/resume"
+baseurl: "/PersonalWebsite"
 remote_theme: "LeNPaul/academic"
 plugins:
   - jekyll-remote-theme
