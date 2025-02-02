@@ -5,8 +5,10 @@ $linkColor: #212529 !important;
 
 body {
   background-image: $backgroundColor;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   background-color: #b5b5b5;
   color: $bodyColor;
   font-family: $bodyFont;
