@@ -21,4 +21,6 @@ body a {
 .fs-4.fw-bold {
     font-size: 3rem !important;
     font-weight: bold !important;
+    font-family: $bodyFont;
+    color: $bodyColor;
 }
