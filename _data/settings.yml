@@ -18,7 +18,7 @@ menu:
 social:
 - {icon: 'github', link: 'https://github.com/Nick-Nunley'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/nicholas-nunley/'}
-- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?hl=en&authuser=1&user=9jHVreoAAAAJ'}
+- {icon: 'fa-brands fa-google-scholar', link: 'https://scholar.google.com/citations?hl=en&authuser=1&user=9jHVreoAAAAJ'}
 - {icon: 'orcid', link: 'https://orcid.org/0009-0007-2368-1653'}
 
 contacts:
