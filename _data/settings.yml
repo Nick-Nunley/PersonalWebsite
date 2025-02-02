@@ -3,6 +3,7 @@ menu:
 # - {name: 'publications', url: '/publications'}
 # - {name: 'courses', url: '/courses'}
 - {name: 'cv', url: '/cv'}
+- {name: 'skills', url: '/skills'}
 - {name: 'contact', url: '/contact'}
 
 # people:
@@ -10,10 +11,20 @@ menu:
 # - {name: 'Lab Technician', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/lab-technician.jpg', url: 'lab-technician'}
 # - {name: 'Graduate Student', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/graduate-student.jpg', url: 'graduate-student'}
 
-# courses:
-# - {name: 'Vector Calculus', url: 'vector-calculus'}
-# - {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
-# - {name: 'Stellar Structures', url: 'stellar-structures'}
+skills:
+- {name: 'Python programming', url: 'https://www.python.org/'}
+- {name: 'R programming', url: 'https://www.r-project.org/'}
+- {name: 'Unix programming', url: 'https://en.wikipedia.org/wiki/Unix'}
+- {name: 'Machine learning', url: 'https://en.wikipedia.org/wiki/Machine_learning'}
+- {name: 'Data science', url: 'https://ischoolonline.berkeley.edu/data-science/what-is-data-science/'}
+- {name: 'Statistics', url: 'https://www.stat.uci.edu/what-is-statistics/'}
+- {name: 'Pipeline development and applications', url: 'https://www.atlassian.com/devops/devops-tools/devops-pipeline'}
+- {name: 'Biomedical experimental design', url: 'https://research.columbia.edu/experimental-design'}
+- {name: 'Mammalian cell culture', url: 'https://www.sigmaaldrich.com/US/en/applications/cell-culture-and-cell-culture-analysis/cell-culture-by-cell-type/mammalian-cell-culture?srsltid=AfmBOoqNfdWRiTAuebuPKcAxcWJkYdkFalQdBbfpjtNYYi08uGVlsmf2'}
+- {name: 'Immunoblotting', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2583035/'}
+- {name: 'Microscopy and IHC', url: 'https://www.cancer.gov/publications/dictionaries/cancer-terms/def/immunohistochemistry'}
+- {name: 'Cellular respirometry', url: 'https://www.med.upenn.edu/robertsonlab/assets/user-content/documents/seahorse-experimentation.pdf'}
+- {name: 'Mentorship', url: 'https://www.ncbi.nlm.nih.gov/books/NBK552775/'}
 
 social:
 - {icon: 'github', link: 'https://github.com/Nick-Nunley'}
