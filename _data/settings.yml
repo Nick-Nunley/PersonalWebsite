@@ -3,7 +3,7 @@ menu:
 # - {name: 'publications', url: '/publications'}
 # - {name: 'courses', url: '/courses'}
 # - {name: 'cv', url: '/cv'}
-- {name: 'contact', url: '/contact'}
+# - {name: 'contact', url: '/contact'}
 
 # people:
 # - {name: 'Primary Investigator', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/primary-investigator.jpg', url: 'primary-investigator'}
@@ -18,6 +18,8 @@ menu:
 social:
 - {icon: 'github', link: 'https://github.com/Nick-Nunley'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/nicholas-nunley/'}
+- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?hl=en&authuser=1&user=9jHVreoAAAAJ'}
+- {icon: 'orcid', link: 'https://orcid.org/0009-0007-2368-1653'}
 
 contacts:
 - {name: 'Nicholas Nunley', title: 'Staff Research Associate', department: 'Urology', institution: 'University of California Los Angeles', email: 'nicknunley17@ucla.edu'}
