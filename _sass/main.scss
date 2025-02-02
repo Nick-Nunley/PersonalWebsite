@@ -5,6 +5,8 @@ $linkColor: #212529 !important;
 
 body {
   background: $backgroundColor;
+  background-repeat: repeat;
+  background-size: contain;
   color: $bodyColor;
   font-family: $bodyFont;
 }
