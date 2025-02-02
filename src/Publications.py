@@ -95,10 +95,8 @@ class Publications:
 
 if __name__ == '__main__':
 
-    # Your ORCID ID
-    orcid_id = os.environ.get('ORCID')
-    orcid_id = '0009-0007-2368-1653'
     # ORCID API endpoint for public data
+    orcid_id = os.environ.get('ORCID')
 
     # Initialize the Publications object
     publications = Publications(orcid_id = orcid_id)
