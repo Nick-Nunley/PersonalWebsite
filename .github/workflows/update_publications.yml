@@ -29,7 +29,7 @@ jobs:
           python-version: '3.13' 
       - run: |
           pip install requests pyyaml
-          python get_publications_by_orcid.py > _data/publications.yml
+          python src/Publications.py > _data/publications.yml
         env:
           ORCID: ${{ secrets.ORCID }}
       - uses: stefanzweifel/git-auto-commit-action@v5
