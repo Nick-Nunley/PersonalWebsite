@@ -1,4 +1,9 @@
-Email: "nicknunley17@ucla.edu"
-GitHub: "https://github.com/Nick-Nunley"
-LinkedIn: "https://www.linkedin.com/in/nicholas-nunley/"
-ORCID: "https://orcid.org/0009-0007-2368-1653"
+links:
+  - name: "Email"
+    url: "mailto:nicknunley17@ucla.edu"
+  - name: "GitHub"
+    url: "https://github.com/Nick-Nunley"
+  - name: "LinkedIn"
+    url: "https://www.linkedin.com/in/nicholas-nunley/"
+  - name: "ORCID"
+    url: "https://orcid.org/0009-0007-2368-1653"

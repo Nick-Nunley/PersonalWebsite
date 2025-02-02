@@ -2,9 +2,10 @@
     <div class="col-md-6">
       <h5>Connect with me:</h5>
       <ul class="list-unstyled">
-        {% for name, url in site.data.links %}
-          <li><a href="{{ url }}" target="_blank" rel="noopener noreferrer">{{ name }}</a></li>
+        {% for item in site.data.links.links %}
+          <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a></li>
         {% endfor %}
       </ul>
     </div>
   </div>
+  
