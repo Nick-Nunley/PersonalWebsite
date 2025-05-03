@@ -1,5 +1,12 @@
 - title: 'Staff Research Associate'
-  description: 'University of California Los Angeles (2022 – present)'
+  description: 'University of California Los Angeles (2022 - present)'
+  details:
+    Conducting research in two labs investigating metabolic and transcriptional reprogramming across prostate cancer disease states:
+      - {name: 'Goldstein lab', url: 'https://www.goldsteinlabucla.com/'}
+      - {name: 'Boutros lab', url: 'https://www.uclahealth.org/departments/urology/iuo/research/faculty-labs/dr-paul-boutros-lab'}
 
 - title: 'Lead K-12 Mathematics Instructor'
-  description: 'Mathnasium, LLC (2019 – 2021)'
+  description: 'Mathnasium, LLC (2019 - 2021)'
+  details:
+    - 'Provided one-on-one and group tutoring in foundational mathematics (e.g. algebra, geometry, trigonometry, calculus) and other general science courses'
+    - 'Managed learning center operations on weekends'
