@@ -15,6 +15,13 @@ layout: default
         {% for section in site.data.cv.education %}
           <p class="fw-bold">{{ section.title }}</p>
           <p>{{ section.description }}</p>
+          {% if section.details %}
+            <ul>
+              {% for item in section.details %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
@@ -26,6 +33,17 @@ layout: default
         {% for section in site.data.cv.experience %}
           <p class="fw-bold">{{ section.title }}</p>
           <p>{{ section.description }}</p>
+          {% if section.details %}
+            <ul>
+              {% for item in section.details %}
+                {% if item.name and item.url %}
+                  <li><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></li>
+                {% else %}
+                  <li>{{ item }}</li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
