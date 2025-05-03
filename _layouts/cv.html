@@ -37,7 +37,6 @@ layout: default
             <ul>
               {% for item in section.details %}
                 {% if item.name and item.url %}
-                  <li><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></li>
                   <ul class="ms-4">
                     <li style="font-size: 0.9em;">
                       <a href="{{ item.url }}" target="_blank">{{ item.name }}</a>
