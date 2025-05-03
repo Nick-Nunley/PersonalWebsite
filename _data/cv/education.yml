@@ -1,11 +1,11 @@
-- title: 'AA (honors): Social and Behavioral Science'
-  description: 'Santa Monica College (2015-2020)'
-  details:
-    - 'Explored multiple academic tracks before transitioning to STEM'
-    - 'Worked part-time in service roles and as a peer tutor for foundational science and math courses'
-
 - title: 'BS: Biochemistry'
   description: 'University of California Los Angeles (2020-2022)'
   details:
     - 'Conducted biomedical research while completing undergraduate coursework'
     - 'Completed a graduate-level course in mass spectrometry proteomics, and upper-division electives in mathematics and machine learning'
+
+- title: 'AA (honors): Social and Behavioral Science'
+  description: 'Santa Monica College (2015-2020)'
+  details:
+    - 'Explored multiple academic tracks before transitioning to STEM'
+    - 'Worked part-time in service roles and as a peer tutor for foundational science and math courses'
