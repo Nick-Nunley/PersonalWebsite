@@ -42,9 +42,43 @@ class DigitalCV:
         cv_header = soup.find('h3', string='CV')
         if cv_header:
             # Create a combined HTML block inside a new container
-            merged_block = merged_block = BeautifulSoup(self.contact_html, 'html.parser')
+            merged_block = merged_block = BeautifulSoup(contact_html, 'html.parser')
             cv_header.replace_with(merged_block)
         return str(soup)
+
+    def inject_skills_section(self, cv_html: str) -> str:
+        cv_soup = BeautifulSoup(cv_html, 'html.parser')
+        skills_html = self.make_request(url = re.sub('/cv', '/skills', self.url))
+        skills_soup = BeautifulSoup(skills_html, 'html.parser')
+
+        # Extract the content section from the skills page (assumes same class structure)
+        skills_section = skills_soup.find('div', class_ = 'row g-5 mb-5')
+        if not skills_section:
+            print('Skills section not found.')
+            return str(cv_soup)
+
+        heading = cv_soup.new_tag('h4', **{'style': 'font-size:1px; height:1px; margin:0; padding:0;'})
+        heading.string = 'Skills'
+        wrapper_div = cv_soup.new_tag('div', **{'class': 'row g-5 mb-5'})
+        col_header = cv_soup.new_tag('div', **{'class': 'col-md-2'})
+        col_header.append(heading)
+        col_body = cv_soup.new_tag('div', **{'class': 'col-md-10'})
+
+        # Insert each top-level element from the skills content into the new section
+        for child in skills_section.find_all(recursive = False):
+            h3 = child.find('h3')
+            # Removing h3 header
+            if h3 and h3.get_text(strip=True) == 'Skills':
+                h3.decompose()
+            col_body.append(child)
+
+        wrapper_div.append(col_header)
+        wrapper_div.append(col_body)
+
+        # Inject skills section after the experience section
+        experience_section = cv_soup.find_all('div', class_='row g-5 mb-5')[-1]
+        experience_section.insert_after(wrapper_div)
+        return str(cv_soup)
 
     def output_to_markdown(self, html: str) -> None:
         output_path = re.sub('.pdf$', '.md', self.output_path)
@@ -53,9 +87,11 @@ class DigitalCV:
         contact_block = soup.find('div', style = lambda value: value and 'border-bottom: 1px solid' in value)
         education_row = soup.find('h4', string = 'Education')
         experience_row = soup.find('h4', string = 'Experience')
+        skills_row = soup.find('h4', string = 'Skills')
         # Go up to their parent .row containers
         education_div = education_row.find_parent('div', class_ = 'row') if education_row else None
         experience_div = experience_row.find_parent('div', class_ = 'row') if experience_row else None
+        skills_div = skills_row.find_parent('div', class_ = 'row') if skills_row else None
         # Create a new soup fragment with just the desired content
         minimal_soup = BeautifulSoup('<div id="cv-minimal"></div>', 'html.parser')
         container = minimal_soup.find('div')
@@ -65,6 +101,20 @@ class DigitalCV:
             container.append(education_div)
         if experience_div:
             container.append(experience_div)
+        if skills_div:
+            # Convert each <p> inside the skills section into a Markdown bullet
+            ul = soup.new_tag('ul')
+            for p in skills_div.find_all('p'):
+                a = p.find('a')
+                if a:
+                    li = soup.new_tag('li')
+                    li.string = f'[{a.get_text(strip=True)}]({a.get("href")})'
+                    ul.append(li)
+            # Create a header for consistency
+            h4 = soup.new_tag('h4')
+            h4.string = 'Skills'
+            container.append(h4)
+            container.append(ul)
         # Convert to markdown
         clean_html = str(minimal_soup)
         markdown = html2text.html2text(clean_html)
@@ -77,8 +127,10 @@ class DigitalCV:
     def main(self) -> None:
         self.html = self.make_request(url = self.url)
         self.html = self.inject_contact_info(html = self.html, contact_html = self.contact_html)
-        self.output_to_markdown(html = self.html)
         self.render_pdf(html = self.html)
+        # Obtaining additional skills for markdown version
+        self.html = self.inject_skills_section(cv_html = self.html)
+        self.output_to_markdown(html = self.html)
 
 
 
