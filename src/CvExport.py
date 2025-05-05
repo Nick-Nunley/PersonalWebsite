@@ -1,5 +1,7 @@
 import argparse
 import requests
+import re
+import html2text
 from weasyprint import HTML
 from bs4 import BeautifulSoup
 
@@ -44,12 +46,38 @@ class DigitalCV:
             cv_header.replace_with(merged_block)
         return str(soup)
 
+    def output_to_markdown(self, html: str) -> None:
+        output_path = re.sub('.pdf$', '.md', self.output_path)
+        soup = BeautifulSoup(html, 'html.parser')
+        # Find the contact/CV header block
+        contact_block = soup.find('div', style = lambda value: value and 'border-bottom: 1px solid' in value)
+        education_row = soup.find('h4', string = 'Education')
+        experience_row = soup.find('h4', string = 'Experience')
+        # Go up to their parent .row containers
+        education_div = education_row.find_parent('div', class_ = 'row') if education_row else None
+        experience_div = experience_row.find_parent('div', class_ = 'row') if experience_row else None
+        # Create a new soup fragment with just the desired content
+        minimal_soup = BeautifulSoup('<div id="cv-minimal"></div>', 'html.parser')
+        container = minimal_soup.find('div')
+        if contact_block:
+            container.append(contact_block)
+        if education_div:
+            container.append(education_div)
+        if experience_div:
+            container.append(experience_div)
+        # Convert to markdown
+        clean_html = str(minimal_soup)
+        markdown = html2text.html2text(clean_html)
+        with open(output_path, 'w', encoding = 'utf-8') as out:
+            out.write(markdown)
+
     def render_pdf(self, html: str) -> None:
         HTML(string = html).write_pdf(self.output_path, stylesheets = [self.style_config])
 
     def main(self) -> None:
         self.html = self.make_request(url = self.url)
         self.html = self.inject_contact_info(html = self.html, contact_html = self.contact_html)
+        self.output_to_markdown(html = self.html)
         self.render_pdf(html = self.html)
 
 
