@@ -1,0 +1,39 @@
+name: Update CV
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 0 */7 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "cv"
+  cancel-in-progress: false
+
+jobs:
+  update-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run CV export script
+        run: |
+          python src/CvExport.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update CV files"
