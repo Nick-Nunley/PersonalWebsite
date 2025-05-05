@@ -6,4 +6,16 @@
         {% endfor %}
       </div>
     </div>
+    {% if page.url == '/cv/' %}
+    <div class="row mt-4">
+      <div class="col-md-12 text-center">
+        <a href="{{ '/assets/CV_NickNunley.pdf' | relative_url }}" download class="btn btn-outline-primary me-1">
+          Download CV as PDF
+        </a>
+        <a href="{{ '/assets/CV_NickNunley.md' | relative_url }}" download class="btn btn-outline-primary ms-1">
+          Download CV as markdown
+        </a>
+      </div>
+    </div>
+    {% endif %}
   </footer>
