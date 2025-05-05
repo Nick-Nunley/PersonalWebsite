@@ -1,0 +1,42 @@
+@page {
+    size: 8.5in auto;
+    margin: 0.5in;
+  }
+  
+  html, body {
+    font-family: sans-serif !important;
+    font-size: 11pt;
+    line-height: 1.4;
+    max-width: 8in;
+  }
+  
+  header, footer {
+    display: none !important;
+  }
+  
+  /* Avoid all breaks */
+  * {
+    break-before: avoid;
+    break-after: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-before: avoid;
+    page-break-after: avoid;
+  }
+  
+  /* Collapse spacing */
+  .row,
+  .col-md-2,
+  .col-md-10 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    margin: 0.25em 0;
+    padding-left: 1em;
+  }
+  li {
+    margin-bottom: 0.2em;
+  }
+  
