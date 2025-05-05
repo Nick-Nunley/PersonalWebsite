@@ -2,15 +2,14 @@ name: Update CV
 
 on:
   workflow_dispatch:
-
   schedule:
-    - cron: "0 0 */7 * *"
+    - cron: "0 0 */7 * *"  # every 7 days
 
 permissions:
   contents: write
 
 concurrency:
-  group: "cv"
+  group: "update-cv"
   cancel-in-progress: false
 
 jobs:
@@ -23,17 +22,34 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
+          python-version: '3.11'
 
-      - name: Install Python dependencies
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Compute checksum of current markdown
+        id: before
         run: |
-          pip install -r requirements.txt
+          if [ -f assets/CV_NickNunley.md ]; then
+            md5sum assets/CV_NickNunley.md > old.md5
+          else
+            echo "no file" > old.md5
+          fi
 
-      - name: Run CV export script
+      - name: Run CvExport script
+        run: python src/CvExport.py
+
+      - name: Compute new checksum
+        id: after
         run: |
-          python src/CvExport.py
+          md5sum assets/CV_NickNunley.md > new.md5
+          echo "changed=false" >> $GITHUB_OUTPUT
+          if ! cmp -s old.md5 new.md5; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
 
-      - name: Commit and push changes
+      - name: Commit updated CV files
+        if: steps.after.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto-update CV files"
