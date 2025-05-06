@@ -48,6 +48,10 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
+      - name: Clean up temporary md5 files
+        if: steps.after.outputs.changed == 'true'
+        run: rm -f old.md5 new.md5
+
       - name: Commit updated CV files
         if: steps.after.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
