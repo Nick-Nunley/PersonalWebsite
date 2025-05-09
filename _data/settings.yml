@@ -33,4 +33,4 @@ social:
 - {icon: 'orcid', link: 'https://orcid.org/0009-0007-2368-1653'}
 
 contacts:
-- {name: 'Nicholas Nunley', title: 'Staff Research Associate', department: 'Urology', institution: 'University of California Los Angeles', institution_address: 'Westwood, CA', phone: '+1 (702) 408-5172', email: 'nicknunley17@ucla.edu', image: 'assets/img/Poster.jpg'}
+- {name: 'Nicholas Nunley', title: 'Staff Research Associate', department: 'Urology', institution: 'University of California Los Angeles', institution_address: 'Westwood, CA', email: 'nicknunley17@ucla.edu', image: 'assets/img/Poster.jpg'}
