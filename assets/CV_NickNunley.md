@@ -2,22 +2,6 @@ CV
 
 [**Nicholas M. Nunley**](https://nick-nunley.github.io/PersonalWebsite/) | [nicknunley17@ucla.edu](mailto:nicknunley17@ucla.edu) | [GitHub](https://github.com/Nick-Nunley) | [Linkedin](https://www.linkedin.com/in/nicholas-nunley/) | Los Angeles, CA 
 
-#### Education
-
-BS: Biochemistry
-
-University of California Los Angeles (2020-2022)
-
-  * Conducted biomedical research while completing undergraduate coursework
-  * Completed a graduate-level course in mass spectrometry proteomics, and upper-division electives in mathematics and machine learning
-
-AA (honors): Social and Behavioral Science
-
-Santa Monica College (2015-2020)
-
-  * Explored multiple academic tracks before transitioning to STEM
-  * Worked part-time in service roles and as a peer tutor for foundational science and math courses
-
 #### Experience
 
 Staff Research Associate
@@ -34,6 +18,22 @@ Mathnasium, LLC (2019 - 2021)
 
   * Provided one-on-one and group tutoring in foundational mathematics (e.g. algebra, geometry, trigonometry, calculus) and other general science courses
   * Managed learning center operations on weekends
+
+#### Education
+
+BS: Biochemistry
+
+University of California Los Angeles (2020-2022)
+
+  * Conducted biomedical research while completing undergraduate coursework
+  * Completed a graduate-level course in mass spectrometry proteomics, and upper-division electives in mathematics and machine learning
+
+AA (honors): Social and Behavioral Science
+
+Santa Monica College (2015-2020)
+
+  * Explored multiple academic tracks before transitioning to STEM
+  * Worked part-time in service roles and as a peer tutor for foundational science and math courses
 
 #### Skills
 
