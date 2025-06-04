@@ -57,7 +57,7 @@ class DigitalCV:
             print('Skills section not found.')
             return str(cv_soup)
 
-        heading = cv_soup.new_tag('h4', **{'style': 'font-size:1px; height:1px; margin:0; padding:0;'})
+        heading = cv_soup.new_tag('h4')
         heading.string = 'Skills'
         wrapper_div = cv_soup.new_tag('div', **{'class': 'row g-5 mb-5'})
         col_header = cv_soup.new_tag('div', **{'class': 'col-md-2'})
@@ -127,9 +127,8 @@ class DigitalCV:
     def main(self) -> None:
         self.html = self.make_request(url = self.url)
         self.html = self.inject_contact_info(html = self.html, contact_html = self.contact_html)
-        self.render_pdf(html = self.html)
-        # Obtaining additional skills for markdown version
         self.html = self.inject_skills_section(cv_html = self.html)
+        self.render_pdf(html = self.html)
         self.output_to_markdown(html = self.html)
 
 
