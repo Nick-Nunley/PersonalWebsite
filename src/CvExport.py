@@ -97,10 +97,10 @@ class DigitalCV:
         container = minimal_soup.find('div')
         if contact_block:
             container.append(contact_block)
-        if education_div:
-            container.append(education_div)
         if experience_div:
             container.append(experience_div)
+        if education_div:
+            container.append(education_div)
         if skills_div:
             # Convert each <p> inside the skills section into a Markdown bullet
             ul = soup.new_tag('ul')
