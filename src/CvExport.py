@@ -59,7 +59,7 @@ class DigitalCV:
 
         heading = cv_soup.new_tag('h4')
         heading.string = 'Skills'
-        wrapper_div = cv_soup.new_tag('div', **{'class': 'row g-5 mb-5'})
+        wrapper_div = cv_soup.new_tag('div', **{'class': 'row g-5 mb-5 skills-section'})
         col_header = cv_soup.new_tag('div', **{'class': 'col-md-2'})
         col_header.append(heading)
         col_body = cv_soup.new_tag('div', **{'class': 'col-md-10'})

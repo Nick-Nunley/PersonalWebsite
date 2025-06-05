@@ -13,15 +13,24 @@
   header, footer {
     display: none !important;
   }
-  
-  /* Avoid all breaks */
-  * {
-    break-before: avoid;
-    break-after: avoid;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    page-break-before: avoid;
-    page-break-after: avoid;
+
+  /* Override break and pagination rules for skills*/
+  .skills-section {
+    display: block !important;
+  }
+
+  .skills-section .col-md-2,
+  .skills-section .col-md-10 {
+    display: block !important;
+  }
+
+  .skills-section .col-md-10 > div {
+    display: block !important;
+  }
+
+  .skills-section p {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
   }
   
   /* Collapse spacing */
