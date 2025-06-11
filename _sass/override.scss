@@ -2,14 +2,19 @@
     size: 8.5in auto;
     margin: 0.5in;
   }
-  
+
   html, body {
     font-family: sans-serif !important;
-    font-size: 11pt;
+    font-size: 8pt;
     line-height: 1.4;
     max-width: 8in;
   }
-  
+
+  h4 {
+    font-size: 12pt !important;
+    margin-bottom: 0.25em;
+  }
+
   header, footer {
     display: none !important;
   }
@@ -32,7 +37,7 @@
     break-inside: auto !important;
     page-break-inside: auto !important;
   }
-  
+
   /* Collapse spacing */
   .row,
   .col-md-2,
@@ -40,7 +45,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   ul {
     margin: 0.25em 0;
     padding-left: 1em;
@@ -48,4 +53,3 @@
   li {
     margin-bottom: 0.2em;
   }
-  
