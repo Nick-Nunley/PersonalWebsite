@@ -24,6 +24,12 @@ layout: default
                       <a href="{{ item.url }}" target="_blank">{{ item.name }}</a>
                     </li>
                   </ul>
+            {% elsif item.subdetail %}
+              <ul class="ms-4">
+                <li style="font-size: 0.9em;">
+                  {{ item.subdetail }}
+                </li>
+              </ul>
                 {% else %}
                   <li>{{ item }}</li>
                 {% endif %}
