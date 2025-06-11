@@ -11,13 +11,29 @@ University of California Los Angeles (2022 - present)
   * Conducting research in two labs investigating metabolic and transcriptional reprogramming across prostate cancer disease states:
     * [Goldstein lab](https://www.goldsteinlabucla.com/)
     * [Boutros lab](https://www.uclahealth.org/departments/urology/iuo/research/faculty-labs/dr-paul-boutros-lab)
+  * Leading two distinct projects in parallel
+  * Hands-on experience in culturing and performing experiments with ~8 different prostate cancer model systems:
+    * Lentiviral transductions 
+    * Immunoblotting 
+    * Metabolic tracing assays 
+    * Viability assays 
+  * Developing and applying computational pipelines for transcriptional analysis
+  * Developing an R datasets package containing processed transcriptional data from over 200 samples across seven different studies at release:
+    * Performed data curation and quality assessment where we detected and corrected sample swaps in external datasets 
+    * Added gene set enrichment analysis and meta-analysis features 
+    * Implemented a custom gene identifier mapping system to enable cross-species analysis without relying on external databases 
+    * Implemented conditional down-sampling and Cartesian offsetting to resolve graphics-rendering failures caused by memory limits and label collisions in enrichment and volcano plots 
 
 Lead K-12 Mathematics Instructor
 
 Mathnasium, LLC (2019 - 2021)
 
   * Provided one-on-one and group tutoring in foundational mathematics (e.g. algebra, geometry, trigonometry, calculus) and other general science courses
-  * Managed learning center operations on weekends
+  * Managed learning center operations on weekends:
+    * Administered assessments to new students 
+    * Managed student learning plans 
+    * Followed up with leads 
+    * Scheduled and matched instructors with students 
 
 #### Education
 
