@@ -19,7 +19,7 @@ University of California Los Angeles (2022 - present)
     * Viability assays 
   * Developing and applying computational pipelines for transcriptional analysis
   * Developing an R datasets package containing processed transcriptional data from over 200 samples across seven different studies at release:
-    * Performed data curation and quality assessment where we detected and corrected sample swaps in external datasets 
+    * Performed data curation and quality assessment where I detected and corrected sample swaps in external datasets 
     * Added gene set enrichment analysis and meta-analysis features 
     * Implemented a custom gene identifier mapping system to enable cross-species analysis without relying on external databases 
     * Implemented conditional down-sampling and Cartesian offsetting to resolve graphics-rendering failures caused by memory limits and label collisions in enrichment and volcano plots 
