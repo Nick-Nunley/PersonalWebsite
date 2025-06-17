@@ -20,9 +20,12 @@ University of California Los Angeles (2022 - present)
   * Developing and applying computational pipelines for transcriptional analysis
   * Developing an R datasets package containing processed transcriptional data from over 200 samples across seven different studies at release:
     * Performed data curation and quality assessment where I detected and corrected sample swaps in external datasets 
+    * Developed an object-oriented dataset class using the S4 system to enable easy access to metadata, sample information, and analysis methods 
     * Added gene set enrichment analysis and meta-analysis features 
-    * Implemented a custom gene identifier mapping system to enable cross-species analysis without relying on external databases 
-    * Implemented conditional down-sampling and Cartesian offsetting to resolve graphics-rendering failures caused by memory limits and label collisions in enrichment and volcano plots 
+    * Implemented a gene identifier mapping system to enable cross-species analysis without relying on external databases 
+    * Resolved graphics-rendering failures caused by memory limits and label collisions in enrichment and volcano plots using custom downsampling and carteisan coordinate offsetting algorithms 
+    * Extended the default lattice axes labeling system to support logarithmic axes 
+    * Implemented a custom colour-mapping engine based on deriving and using an affine RGB transformation matrix, enabling continuous two-colour gradients and three-colour (diverging) schemes 
 
 Lead K-12 Mathematics Instructor
 
