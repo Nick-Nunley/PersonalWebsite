@@ -48,7 +48,7 @@ class DigitalCV:
 
     def inject_skills_section(self, cv_html: str) -> str:
         cv_soup = BeautifulSoup(cv_html, 'html.parser')
-        skills_html = self.make_request(url = re.sub('/cv', '/skills', self.url))
+        skills_html = self.make_request(url=re.sub('/cv', '/skills', self.url))
         skills_soup = BeautifulSoup(skills_html, 'html.parser')
 
         # Extract the content section from the skills page (assumes same class structure)
@@ -64,19 +64,19 @@ class DigitalCV:
         col_header.append(heading)
         col_body = cv_soup.new_tag('div', **{'class': 'col-md-10'})
 
-        # Insert each top-level element from the skills content into the new section
+        # Copy over each top-level element from the original skills_section,
+        # but strip any hyperlinks
         for child in skills_section.find_all(recursive = False):
             h3 = child.find('h3')
-            # Removing h3 header
-            if h3 and h3.get_text(strip=True) == 'Skills':
+            if h3 and h3.get_text(strip = True) == 'Skills':
                 h3.decompose()
+            for a in child.find_all('a'):
+                a.replace_with(a.get_text(strip = True))
             col_body.append(child)
 
         wrapper_div.append(col_header)
         wrapper_div.append(col_body)
-
-        # Inject skills section after the experience section
-        experience_section = cv_soup.find_all('div', class_='row g-5 mb-5')[-1]
+        experience_section = cv_soup.find_all('div', class_= 'row g-5 mb-5')[-1]
         experience_section.insert_after(wrapper_div)
         return str(cv_soup)
 
@@ -105,11 +105,12 @@ class DigitalCV:
             # Convert each <p> inside the skills section into a Markdown bullet
             ul = soup.new_tag('ul')
             for p in skills_div.find_all('p'):
-                a = p.find('a')
-                if a:
-                    li = soup.new_tag('li')
-                    li.string = f'[{a.get_text(strip=True)}]({a.get("href")})'
-                    ul.append(li)
+                text = p.get_text(strip = True)
+                if not text:
+                    continue
+                li = soup.new_tag('li')
+                li.string = text
+                ul.append(li)
             # Create a header for consistency
             h4 = soup.new_tag('h4')
             h4.string = 'Skills'
