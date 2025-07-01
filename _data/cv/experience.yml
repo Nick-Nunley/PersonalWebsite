@@ -18,7 +18,7 @@
     - subdetail: 'Developed an object-oriented dataset class using the S4 system to enable easy access to metadata, sample information, and analysis methods'
     - subdetail: 'Added gene set enrichment analysis and meta-analysis features'
     - subdetail: 'Implemented a gene identifier mapping system to enable cross-species analysis without relying on external databases'
-    - subdetail: 'Resolved graphics-rendering failures caused by memory limits and label collisions in enrichment and volcano plots using custom downsampling and carteisan coordinate offsetting algorithms'
+    - subdetail: 'Resolved graphics-rendering failures caused by memory limits and label collisions in enrichment and volcano plots using custom downsampling and cartesian coordinate offsetting algorithms'
     - subdetail: 'Extended the default lattice axes labeling system to support logarithmic axes'
     - subdetail: 'Implemented a custom colour-mapping engine based on deriving and using an affine RGB transformation matrix, enabling continuous two-colour gradients and three-colour (diverging) schemes'
 
