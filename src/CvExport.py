@@ -85,6 +85,7 @@ class DigitalCV:
         soup = BeautifulSoup(html, 'html.parser')
         # Find the contact/CV header block
         contact_block = soup.find('div', style = lambda value: value and 'border-bottom: 1px solid' in value)
+        summary_row = soup.find('p', class_ = 'lead')
         education_row = soup.find('h4', string = 'Education')
         experience_row = soup.find('h4', string = 'Experience')
         skills_row = soup.find('h4', string = 'Skills')
@@ -97,6 +98,8 @@ class DigitalCV:
         container = minimal_soup.find('div')
         if contact_block:
             container.append(contact_block)
+        if summary_row:
+            container.append(summary_row)
         if experience_div:
             container.append(experience_div)
         if education_div:
