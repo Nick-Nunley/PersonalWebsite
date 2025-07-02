@@ -2,6 +2,9 @@ CV
 
 [**Nicholas M. Nunley**](https://nick-nunley.github.io/PersonalWebsite/) | [nicknunley17@ucla.edu](mailto:nicknunley17@ucla.edu) | [GitHub](https://github.com/Nick-Nunley) | [Linkedin](https://www.linkedin.com/in/nicholas-nunley/) | Los Angeles, CA 
 
+Biomedical researcher passionate about applying mathematical theory and
+developing software to solve problems in biology
+
 #### Experience
 
 Staff Research Associate
@@ -23,7 +26,7 @@ University of California Los Angeles (2022 - present)
     * Developed an object-oriented dataset class using the S4 system to enable easy access to metadata, sample information, and analysis methods 
     * Added gene set enrichment analysis and meta-analysis features 
     * Implemented a gene identifier mapping system to enable cross-species analysis without relying on external databases 
-    * Resolved graphics-rendering failures caused by memory limits and label collisions in enrichment and volcano plots using custom downsampling and carteisan coordinate offsetting algorithms 
+    * Resolved graphics-rendering failures caused by memory limits and label collisions in enrichment and volcano plots using custom downsampling and cartesian coordinate offsetting algorithms 
     * Extended the default lattice axes labeling system to support logarithmic axes 
     * Implemented a custom colour-mapping engine based on deriving and using an affine RGB transformation matrix, enabling continuous two-colour gradients and three-colour (diverging) schemes 
 
