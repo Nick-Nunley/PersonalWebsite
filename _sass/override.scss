@@ -8,6 +8,22 @@
     font-size: 8pt;
     line-height: 1.4;
     max-width: 8in;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Resetting link colors */
+  a:link {
+    color: #0000EE !important;
+    text-decoration: underline !important;
+  }
+  a:visited {
+    color: #551A8B !important;
+    text-decoration: underline !important;
+  }
+  a:hover,
+  a:active {
+    text-decoration: underline !important;
   }
 
   h4 {
