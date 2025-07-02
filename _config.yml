@@ -5,3 +5,7 @@ baseurl: "/PersonalWebsite"
 remote_theme: "LeNPaul/academic"
 plugins:
   - jekyll-remote-theme
+collections:
+  slides:
+    output: true
+    permalink: /slides/:name/

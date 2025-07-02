@@ -1,0 +1,34 @@
+<!-- _layouts/slide.html -->
+---
+layout: default
+---
+<div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <article class="slide-page">
+      <h3 class="fw-bold border-bottom pb-3 mb-4">{{ page.title }}</h3>
+      
+      <p class="mb-4">
+        <small>
+          Presented on 
+          <time datetime="{{ page.date }}">
+            {{ page.date | date: "%B %-d, %Y" }}
+          </time>
+        </small>
+      </p>
+
+      <object
+        data="{{ '/assets/slides/' | append: page.file | relative_url }}"
+        type="application/pdf"
+        width="100%"
+        height="800"
+        class="border"
+      >
+        <p>Your browser doesn’t support embedded PDFs. 
+          <a href="{{ '/assets/slides/' | append: page.file | relative_url }}">
+            Download the slides.
+          </a>
+        </p>
+      </object>
+    </article>
+  </div>
+</div>
