@@ -5,29 +5,41 @@ layout: default
   <div class="col-md-12">
     <article class="slide-page">
       <h3 class="fw-bold border-bottom pb-3 mb-4">{{ page.title }}</h3>
-      
       <p class="mb-4">
         <small>
           Presented on 
-          <time datetime="{{ page.date }}">
-            {{ page.date | date: "%B %-d, %Y" }}
-          </time>
+          <time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time>
         </small>
       </p>
 
-      <object
-        data="{{ '/assets/slides/' | append: page.file | relative_url }}"
-        type="application/pdf"
-        width="100%"
-        height="800"
-        class="border"
-      >
-        <p>Your browser doesn't support embedded PDFs. 
-          <a href="{{ '/assets/slides/' | append: page.file | relative_url }}">
-            Download the slides.
-          </a>
-        </p>
-      </object>
+      <!-- Desktop embed -->
+      <div class="pdf-desktop" style="height:80vh; overflow:auto; -webkit-overflow-scrolling:touch;">
+        <iframe
+          src="{{ '/assets/slides/' | append: page.file | relative_url }}"
+          width="100%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <!-- Mobile fallback link -->
+      <div class="pdf-mobile-link" style="display:none; text-align:center; margin-top:1rem;">
+        <a 
+          href="{{ '/assets/slides/' | append: page.file | relative_url }}"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          Open slides in native viewer
+        </a>
+      </div>
     </article>
   </div>
 </div>
+
+<script>
+// Hide the iframe on iOS and show the link instead
+if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
+  document.querySelector('.pdf-desktop').style.display = 'none';
+  document.querySelector('.pdf-mobile-link').style.display = 'block';
+}
+</script>
