@@ -1,5 +1,5 @@
 ---
 layout: slides
-title: Slides
+title: "Slides"
 permalink: /slides/
 ---
