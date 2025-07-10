@@ -5,16 +5,21 @@ layout: default
 <div class="row g-5 mb-5">
   <div class="col-md-12">
     <h3 class="fw-bold border-bottom pb-3 mb-5">{{ page.title }}</h3>
+
     <ul class="list-unstyled">
       {% assign sorted_slides = site.slides | sort: "date" | reverse %}
       {% for slide in sorted_slides %}
-        <li class="mb-3">
-          <time class="text-muted me-2" datetime="{{ slide.date }}">
-            {{ slide.date | date: "%b %-d, %Y" }}
-          </time>
-          <a href="{{ slide.url | relative_url }}" class="text-primary">
-            {{ slide.title }}
-          </a>
+        <li class="mb-4">
+          <p class="text-muted small mb-1">
+            <time datetime="{{ slide.date }}">
+              {{ slide.date | date: "%b %-d, %Y" }}
+            </time>
+          </p>
+          <p class="mb-0">
+            <a href="{{ slide.url | relative_url }}">
+              {{ slide.title }}
+            </a>
+          </p>
         </li>
       {% endfor %}
     </ul>
