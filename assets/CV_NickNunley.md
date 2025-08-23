@@ -69,6 +69,8 @@ Santa Monica College (2015-2020)
   * Statistics
   * Transcriptomics
   * Metabolomics
+  * AI Engineering
+  * RAG
   * Nextflow
   * git
   * Docker
