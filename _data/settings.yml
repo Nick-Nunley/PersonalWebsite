@@ -23,6 +23,8 @@ skills:
 - {name: 'Statistics', url: 'https://www.stat.uci.edu/what-is-statistics/'}
 - {name: 'Transcriptomics', url: 'https://en.wikipedia.org/wiki/Transcriptomics_technologies'}
 - {name: 'Metabolomics', url: 'https://en.wikipedia.org/wiki/Metabolomics'}
+- {name: 'AI Engineering', url: 'https://en.wikipedia.org/wiki/Artificial_intelligence_engineering'}
+- {name: 'RAG', url: 'https://aws.amazon.com/what-is/retrieval-augmented-generation/'}
 - {name: 'Nextflow', url: 'https://www.nextflow.io/docs/latest/overview.html'}
 - {name: 'git', url: 'https://git-scm.com/'}
 - {name: 'Docker', url: 'https://www.docker.com/'}
