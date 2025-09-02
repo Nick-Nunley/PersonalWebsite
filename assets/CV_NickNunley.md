@@ -33,7 +33,7 @@ University of California Los Angeles (2022 - present)
     * Engineered 9 modules with 4 CLI entrypoints for loading, indexing, retrieval, and augmentation 
     * Shipped v0.1.0 with tagged release and changelog 
     * Implemented 3 CI/CD workflows via GitHub Actions 
-    * Published packaged to PyPI 
+    * Published package to PyPI 
     * Implemented continuous unit and integration testing with ~83% coverage 
 
 Lead K-12 Mathematics Instructor
