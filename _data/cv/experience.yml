@@ -25,7 +25,7 @@
     - subdetail: 'Engineered 9 modules with 4 CLI entrypoints for loading, indexing, retrieval, and augmentation'
     - subdetail: 'Shipped v0.1.0 with tagged release and changelog'
     - subdetail: 'Implemented 3 CI/CD workflows via GitHub Actions'
-    - subdetail: 'Published packaged to PyPI'
+    - subdetail: 'Published package to PyPI'
     - subdetail: 'Implemented continuous unit and integration testing with ~83% coverage'
 
 - title: 'Lead K-12 Mathematics Instructor'
