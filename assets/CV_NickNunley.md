@@ -11,17 +11,17 @@ Staff Research Associate
 
 University of California Los Angeles (2022 - present)
 
-  * Conducting research in two labs investigating metabolic and transcriptional reprogramming across prostate cancer disease states:
+  * Conducted research in two labs investigating metabolic and transcriptional reprogramming across prostate cancer disease states:
     * [Goldstein lab](https://www.goldsteinlabucla.com/)
     * [Boutros lab](https://www.uclahealth.org/departments/urology/iuo/research/faculty-labs/dr-paul-boutros-lab)
-  * Leading two distinct projects in parallel
+  * Led two distinct research projects in parallel and developed a third open-source software project
   * Hands-on experience in culturing and performing experiments with ~8 different prostate cancer model systems:
     * Lentiviral transductions 
     * Immunoblotting 
     * Metabolic tracing assays 
     * Viability assays 
-  * Developing and applying computational pipelines for transcriptional analysis
-  * Developing an R datasets package containing processed transcriptional data from over 200 samples across seven different studies at release:
+  * Developed and applied computational pipelines for transcriptional analysis
+  * Developed an R datasets package containing processed transcriptional data from over 200 samples across seven different studies at release:
     * Performed data curation and quality assessment where I detected and corrected sample swaps in external datasets 
     * Developed an object-oriented dataset class using the S4 system to enable easy access to metadata, sample information, and analysis methods 
     * Added gene set enrichment analysis and meta-analysis features 
@@ -29,6 +29,12 @@ University of California Los Angeles (2022 - present)
     * Resolved graphics-rendering failures caused by memory limits and label collisions in enrichment and volcano plots using custom downsampling and cartesian coordinate offsetting algorithms 
     * Extended the default lattice axes labeling system to support logarithmic axes 
     * Implemented a custom colour-mapping engine based on deriving and using an affine RGB transformation matrix, enabling continuous two-colour gradients and three-colour (diverging) schemes 
+  * Developed RAGToolBox: a modular python package for Retrieval-Augmented Generation (RAG) prototyping
+    * Engineered 9 modules with 4 CLI entrypoints for loading, indexing, retrieval, and augmentation 
+    * Shipped v0.1.0 with tagged release and changelog 
+    * Implemented 3 CI/CD workflows via GitHub Actions 
+    * Published packaged to PyPI 
+    * Implemented continuous unit and integration testing with ~83% coverage 
 
 Lead K-12 Mathematics Instructor
 
