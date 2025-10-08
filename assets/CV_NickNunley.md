@@ -2,14 +2,14 @@ CV
 
 [**Nicholas M. Nunley**](https://nick-nunley.github.io/PersonalWebsite/) | [nicknunley17@ucla.edu](mailto:nicknunley17@ucla.edu) | [GitHub](https://github.com/Nick-Nunley) | [Linkedin](https://www.linkedin.com/in/nicholas-nunley/) | Los Angeles, CA 
 
-Biomedical researcher passionate about applying mathematical theory and
-developing software to solve problems in biology
+Entrepreneur and developer passionate about applying mathematical theory and
+creating software to solve problems
 
 #### Experience
 
 Staff Research Associate
 
-University of California Los Angeles (2022 - present)
+University of California Los Angeles (2022 - 2025)
 
   * Conducted research in two labs investigating metabolic and transcriptional reprogramming across prostate cancer disease states:
     * [Goldstein lab](https://www.goldsteinlabucla.com/)
