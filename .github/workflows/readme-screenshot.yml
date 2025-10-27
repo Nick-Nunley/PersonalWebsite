@@ -24,8 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TARGET_URL: https://nick-nunley.github.io/PersonalWebsite/
-      SCREENSHOT_PATH: assets/img/homepage.png
-      TEMP_SCREENSHOT_PATH: assets/img/homepage.new.png
+      SCREENSHOT_PATH: assets/readme/homepage.png
+      TEMP_SCREENSHOT_PATH: assets/readme/homepage.new.png
       VIEWPORT_WIDTH: "1200"
       VIEWPORT_HEIGHT: "800"
       DEVICE_SCALE_FACTOR: "2"
