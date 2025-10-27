@@ -40,7 +40,7 @@ jobs:
           fi
 
       - name: Run CvExport script
-        run: python src/CvExport.py
+        run: python scripts/CvExport.py
 
       - name: Compute new checksum
         id: after
