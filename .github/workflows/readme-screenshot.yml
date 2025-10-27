@@ -1,0 +1,103 @@
+name: Update README screenshot
+
+on:
+  # Run after your Pages deploy completes
+  workflow_run:
+    workflows: ["Deploy Jekyll with GitHub Pages dependencies preinstalled"]
+    types: [completed]
+  # Manual trigger
+  workflow_dispatch:
+  # Weekly check (optional)
+  schedule:
+    - cron: "0 8 * * 1"
+
+# We will push an updated image when it changed
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-screenshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    env:
+      TARGET_URL: https://nick-nunley.github.io/PersonalWebsite/
+      SCREENSHOT_PATH: assets/img/homepage.png
+      TEMP_SCREENSHOT_PATH: assets/img/homepage.new.png
+      VIEWPORT_WIDTH: "1200"
+      VIEWPORT_HEIGHT: "800"
+      DEVICE_SCALE_FACTOR: "2"
+      WAIT_FOR_SELECTOR: ""
+      WAIT_FOR_SELECTOR_TIMEOUT_MS: "15000"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure output directory exists
+        run: mkdir -p "$(dirname "$SCREENSHOT_PATH")"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install deps (tsx + Playwright)
+        run: |
+          npm i -D tsx playwright@^1.48.0
+          npx playwright install --with-deps
+
+      - name: Wait for site to be live
+        run: |
+          echo "Waiting for $TARGET_URL ..."
+          for i in {1..24}; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$TARGET_URL")
+            if [ "$code" = "200" ]; then
+              echo "OK: $TARGET_URL"
+              break
+            fi
+            echo "Got $code; retrying in 10s..."
+            sleep 10
+          done
+
+      - name: Take screenshot (to temp file)
+        run: |
+          SCREENSHOT_PATH="$TEMP_SCREENSHOT_PATH" node scripts/readme-screenshot.mjs
+
+      - name: Compute checksums and decide if changed
+        id: diff
+        shell: bash
+        run: |
+          set -e
+          if [ -f "$SCREENSHOT_PATH" ]; then
+            md5sum "$SCREENSHOT_PATH" | awk '{print $1}' > old.md5
+          else
+            echo "no-existing-file" > old.md5
+          fi
+          md5sum "$TEMP_SCREENSHOT_PATH" | awk '{print $1}' > new.md5
+          if cmp -s old.md5 new.md5; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Replace old screenshot with new
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          mv "$TEMP_SCREENSHOT_PATH" "$SCREENSHOT_PATH"
+          rm -f old.md5 new.md5
+
+      - name: Clean up temp if unchanged
+        if: steps.diff.outputs.changed != 'true'
+        run: |
+          rm -f "$TEMP_SCREENSHOT_PATH" old.md5 new.md5
+
+      - name: Commit updated screenshot
+        if: steps.diff.outputs.changed == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(readme): refresh homepage screenshot [skip ci]"
+          file_pattern: assets/readme/homepage.png
