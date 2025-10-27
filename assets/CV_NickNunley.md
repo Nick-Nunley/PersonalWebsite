@@ -11,7 +11,7 @@ Staff Research Associate
 
 University of California Los Angeles (2022 - 2025)
 
-  * Conducted research in two labs investigating metabolic and transcriptional reprogramming across prostate cancer disease states:
+  * Conducted research in two labs investigating metabolic and transcriptional reprogramming across prostate cancer disease states resulting in two peer-reviewed publications, two open-source packages, and a poster:
     * [Goldstein lab](https://www.goldsteinlabucla.com/)
     * [Boutros lab](https://www.uclahealth.org/departments/urology/iuo/research/faculty-labs/dr-paul-boutros-lab)
   * Led two distinct research projects in parallel and developed a third open-source software project
