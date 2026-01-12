@@ -1,6 +1,7 @@
 - title: 'Research Data Scientist & Software Engineer (Staff Research Associate)'
   description: 'University of California Los Angeles (2022 - 2025)'
   details:
+    - 'Hybrid research data scientist and software engineer that helped lead computational biology, statistical analysis, and production-grade software development'
     - 'Built end-to-end computational pipelines and experimental research projects across transcriptomic analysis, metabolic profiling, and software development in two laboratories, resulting in two peer-reviewed publications, two open-source packages, and a poster:'
     - name: 'Goldstein lab'
       url: 'https://www.goldsteinlabucla.com/'
@@ -23,11 +24,7 @@
     - subdetail: 'Deployed 3 CI/CD workflows via GitHub Actions to automate build, test, and release steps'
     - subdetail: 'Published the package to PyPI'
     - subdetail: 'Implemented continuous unit and integration testing to ~83% coverage'
-    - 'Cultured and performed ~50 experiments with ~8 different prostate cancer model systems:'
-    - subdetail: 'Executed lentiviral transductions for model-system experiments'
-    - subdetail: 'Performed immunoblotting to validate experimental readouts and quantify biomarker expression levels'
-    - subdetail: 'Ran metabolic tracing assays to assess metabolic activity and trajectory'
-    - subdetail: 'Conducted viability assays to quantify cell survival'
+    - 'Managed mammalian cell culture and functional assays across ~50 experiments and ~8 prostate cancer model systems, including lentiviral transduction, immunoblotting, metabolic tracing, and viability assays'
 
 - title: 'Lead K-12 Mathematics Instructor'
   description: 'Mathnasium, LLC (2019 - 2021)'
