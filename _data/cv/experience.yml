@@ -6,7 +6,7 @@
       url: 'https://www.goldsteinlabucla.com/'
     - name: 'Boutros lab'
       url: 'https://www.uclahealth.org/departments/urology/iuo/research/faculty-labs/dr-paul-boutros-lab'
-    - 'Led two distinct research projects in parallel and developed a third open-source software project spanning experimental design, data analysis, and software development'
+    - 'Owned and led two distinct research projects in parallel and developed a third open-source software project spanning experimental design, data analysis, and software development'
     - 'Architected and released an R datasets package containing processed transcriptional data from over 200 samples across seven different studies at release:'
     - subdetail: 'Performed data curation and quality assessment where I detected and corrected sample swaps in external datasets'
     - subdetail: 'Designed and implemented an object-oriented dataset class using the S4 system to enable easy access to metadata, sample information, and analysis methods'
