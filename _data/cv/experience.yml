@@ -1,12 +1,11 @@
 - title: 'Research Data Scientist & Software Engineer (Staff Research Associate)'
   description: 'University of California Los Angeles (2022 - 2025)'
   details:
-    - 'Led end-to-end computational and experimental research projects spanning transcriptomic analysis, metabolic profiling, and software development across two laboratories resulting in two peer-reviewed publications, two open-source packages, and a poster:'
+    - 'Led end-to-end computational-pipeline development and experimental research projects spanning transcriptomic analysis, metabolic profiling, and software development across two laboratories resulting in two peer-reviewed publications, two open-source packages, and a poster:'
     - name: 'Goldstein lab'
       url: 'https://www.goldsteinlabucla.com/'
     - name: 'Boutros lab'
       url: 'https://www.uclahealth.org/departments/urology/iuo/research/faculty-labs/dr-paul-boutros-lab'
-    - 'Developed and applied computational pipelines for transcriptional & metabolomic analysis'
     - 'Led two distinct research projects in parallel and developed a third open-source software project spanning experimental design, data analysis, and software development'
     - 'Architected and released an R datasets package containing processed transcriptional data from over 200 samples across seven different studies at release:'
     - subdetail: 'Performed data curation and quality assessment where I detected and corrected sample swaps in external datasets'
