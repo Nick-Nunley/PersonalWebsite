@@ -17,7 +17,7 @@
     - subdetail: 'Extended the default lattice axes labeling system to support logarithmic axes'
     - subdetail: 'Designed a custom colour-mapping engine enabling continuous and diverging gradients for high-dimensional biological data visualization, using affine RGB transformations'
     - 'Mentored junior-level colleagues in Software Development Lifecycle (SDLC) practices, statistical modeling, & aseptic cell culture techniques'
-    - 'Performed code reviews related to data quality assurance & quality control'
+    - 'Conducted peer code reviews across pull-request-based and ad hoc workflows related to data quality assurance, quality control, reproducibility, & analytical correctness'
     - 'Shipped RAGToolBox: a modular python package for Retrieval-Augmented Generation (RAG) prototyping'
     - subdetail: 'Engineered 9 modules with 4 CLI entrypoints for loading, indexing, retrieval, and augmentation'
     - subdetail: 'Shipped v0.1.0 with tagged release and changelog'
