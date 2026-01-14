@@ -65,32 +65,3 @@ Santa Monica College (2015-2020)
 
 #### Skills
 
-  * Python programming
-  * R programming
-  * NumPy
-  * pandas
-  * Unix
-  * Machine learning
-  * Data science
-  * Statistics
-  * Transcriptomics
-  * Metabolomics
-  * AI Engineering
-  * RAG
-  * Nextflow
-  * git
-  * Docker
-  * CI/CD
-  * High-performance computing
-  * Pipeline development and applications
-  * Applied mathematics
-  * Network analysis
-  * Simulation-based inference
-  * Biomedical experimental design
-  * Mammalian cell culture
-  * Immunoblotting
-  * Microscopy and IHC
-  * Cellular respirometry
-  * Scientific communication
-  * Mentorship
-
