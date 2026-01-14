@@ -7,8 +7,17 @@ layout: default
 <div class="row g-5 mb-5">
   <div>
     <h3 class="fw-bold border-bottom pb-3 mb-5">Skills</h3>
-    {% for skill in site.data.settings.skills %}
-      <p><a href="{{ skill.url }}" target="_blank" rel="noopener noreferrer">{{ skill.name }}</a></p>
-    {% endfor %}
+    <ul>
+      {% for category in site.data.settings.skills %}
+        <li>
+          <span class="fw-semibold">{{ category.category }}</span>
+          <ul>
+            {% for skill in category.items %}
+              <li><a href="{{ skill.url }}" target="_blank" rel="noopener noreferrer">{{ skill.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>

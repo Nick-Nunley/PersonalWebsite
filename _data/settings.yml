@@ -13,34 +13,51 @@ menu:
 # - {name: 'Graduate Student', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/graduate-student.jpg', url: 'graduate-student'}
 
 skills:
-- {name: 'Python programming', url: 'https://www.python.org/'}
-- {name: 'R programming', url: 'https://www.r-project.org/'}
-- {name: 'NumPy', url: 'https://numpy.org/'}
-- {name: 'pandas', url: 'https://pandas.pydata.org/'}
-- {name: 'Unix', url: 'https://en.wikipedia.org/wiki/Unix'}
-- {name: 'Machine learning', url: 'https://en.wikipedia.org/wiki/Machine_learning'}
-- {name: 'Data science', url: 'https://ischoolonline.berkeley.edu/data-science/what-is-data-science/'}
-- {name: 'Statistics', url: 'https://www.stat.uci.edu/what-is-statistics/'}
-- {name: 'Transcriptomics', url: 'https://en.wikipedia.org/wiki/Transcriptomics_technologies'}
-- {name: 'Metabolomics', url: 'https://en.wikipedia.org/wiki/Metabolomics'}
-- {name: 'AI Engineering', url: 'https://en.wikipedia.org/wiki/Artificial_intelligence_engineering'}
-- {name: 'RAG', url: 'https://github.com/Nick-Nunley/RAGToolBox'}
-- {name: 'Nextflow', url: 'https://www.nextflow.io/docs/latest/overview.html'}
-- {name: 'git', url: 'https://git-scm.com/'}
-- {name: 'Docker', url: 'https://www.docker.com/'}
-- {name: 'CI/CD', url: 'https://en.wikipedia.org/wiki/CI/CD'}
-- {name: 'High-performance computing', url: 'https://en.wikipedia.org/wiki/High-performance_computing'}
-- {name: 'Pipeline development and applications', url: 'https://www.atlassian.com/devops/devops-tools/devops-pipeline'}
-- {name: 'Applied mathematics', url: 'https://en.wikipedia.org/wiki/Applied_mathematics'}
-- {name: 'Network analysis', url: 'https://en.wikipedia.org/wiki/Network_theory'}
-- {name: 'Simulation-based inference', url: 'https://simulation-based-inference.org/'}
-- {name: 'Biomedical experimental design', url: 'https://research.columbia.edu/experimental-design'}
-- {name: 'Mammalian cell culture', url: 'https://www.sigmaaldrich.com/US/en/applications/cell-culture-and-cell-culture-analysis/cell-culture-by-cell-type/mammalian-cell-culture?srsltid=AfmBOoqNfdWRiTAuebuPKcAxcWJkYdkFalQdBbfpjtNYYi08uGVlsmf2'}
-- {name: 'Immunoblotting', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2583035/'}
-- {name: 'Microscopy and IHC', url: 'https://www.cancer.gov/publications/dictionaries/cancer-terms/def/immunohistochemistry'}
-- {name: 'Cellular respirometry', url: 'https://www.med.upenn.edu/robertsonlab/assets/user-content/documents/seahorse-experimentation.pdf'}
-- {name: 'Scientific communication', url: 'https://en.wikipedia.org/wiki/Science_communication'}
-- {name: 'Mentorship', url: 'https://www.ncbi.nlm.nih.gov/books/NBK552775/'}
+  - category: 'Programming & scripting'
+    items:
+      - {name: 'Python programming', url: 'https://www.python.org/'}
+      - {name: 'R programming', url: 'https://www.r-project.org/'}
+      - {name: 'Unix', url: 'https://en.wikipedia.org/wiki/Unix'}
+
+  - category: 'Data science & analytics'
+    items:
+      - {name: 'Machine learning', url: 'https://en.wikipedia.org/wiki/Machine_learning'}
+      - {name: 'Statistics', url: 'https://www.stat.uci.edu/what-is-statistics/'}
+      - {name: 'AI Engineering', url: 'https://en.wikipedia.org/wiki/Artificial_intelligence_engineering'}
+      - {name: 'NumPy', url: 'https://numpy.org/'}
+      - {name: 'pandas', url: 'https://pandas.pydata.org/'}
+      - {name: 'RAG', url: 'https://github.com/Nick-Nunley/RAGToolBox'}
+      - {name: 'Network analysis', url: 'https://en.wikipedia.org/wiki/Network_theory'}
+      - {name: 'Simulation-based inference', url: 'https://simulation-based-inference.org/'}
+      - {name: 'Applied mathematics', url: 'https://en.wikipedia.org/wiki/Applied_mathematics'}
+
+  - category: 'Software engineering & pipelines'
+    items:
+      - {name: 'git', url: 'https://git-scm.com/'}
+      - {name: 'CI/CD', url: 'https://en.wikipedia.org/wiki/CI/CD'}
+      - {name: 'Docker', url: 'https://www.docker.com/'}
+      - {name: 'Pipeline development and applications', url: 'https://www.atlassian.com/devops/devops-tools/devops-pipeline'}
+      - {name: 'High-performance computing', url: 'https://en.wikipedia.org/wiki/High-performance_computing'}
+
+  - category: 'Scientific computing & bioinformatics'
+    items:
+      - {name: 'Nextflow', url: 'https://www.nextflow.io/docs/latest/overview.html'}
+      - {name: 'Transcriptomics', url: 'https://en.wikipedia.org/wiki/Transcriptomics_technologies'}
+      - {name: 'Metabolomics', url: 'https://en.wikipedia.org/wiki/Metabolomics'}
+
+  - category: 'Leadership'
+    items:
+      - {name: 'Scientific communication', url: 'https://en.wikipedia.org/wiki/Science_communication'}
+      - {name: 'Mentorship', url: 'https://www.ncbi.nlm.nih.gov/books/NBK552775/'}
+
+  - category: 'Experimental biology techniques'
+    items:
+      - {name: 'Biomedical experimental design', url: 'https://research.columbia.edu/experimental-design'}
+      - {name: 'Mammalian cell culture', url: 'https://www.sigmaaldrich.com/US/en/applications/cell-culture-and-cell-culture-analysis/cell-culture-by-cell-type/mammalian-cell-culture?srsltid=AfmBOoqNfdWRiTAuebuPKcAxcWJkYdkFalQdBbfpjtNYYi08uGVlsmf2'}
+      - {name: 'Immunoblotting', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2583035/'}
+      - {name: 'Microscopy and IHC', url: 'https://www.cancer.gov/publications/dictionaries/cancer-terms/def/immunohistochemistry'}
+      - {name: 'Cellular respirometry', url: 'https://www.med.upenn.edu/robertsonlab/assets/user-content/documents/seahorse-experimentation.pdf'}
+
 
 social:
 - {icon: 'github', link: 'https://github.com/Nick-Nunley'}
