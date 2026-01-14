@@ -16,6 +16,8 @@ skills:
   - category: 'Programming & scripting'
     items:
       - {name: 'Python programming', url: 'https://www.python.org/'}
+      - {name: 'SQL', url: 'https://en.wikipedia.org/wiki/SQL'}
+      - {name: 'TypeScript', url: 'https://www.typescriptlang.org/'}
       - {name: 'R programming', url: 'https://www.r-project.org/'}
       - {name: 'Unix', url: 'https://en.wikipedia.org/wiki/Unix'}
 
@@ -23,9 +25,14 @@ skills:
     items:
       - {name: 'Machine learning', url: 'https://en.wikipedia.org/wiki/Machine_learning'}
       - {name: 'Statistics', url: 'https://www.stat.uci.edu/what-is-statistics/'}
+      - {name: 'Optimization', url: 'https://en.wikipedia.org/wiki/Mathematical_optimization'}
+      - {name: 'Model evaluation & validation', url: 'https://en.wikipedia.org/wiki/Statistical_model_validation'}
+      - {name: 'Data visualization', url: 'https://en.wikipedia.org/wiki/Data_visualization'}
+      - {name: 'Data modeling', url: 'https://en.wikipedia.org/wiki/Data_modeling'}
       - {name: 'AI Engineering', url: 'https://en.wikipedia.org/wiki/Artificial_intelligence_engineering'}
       - {name: 'NumPy', url: 'https://numpy.org/'}
       - {name: 'pandas', url: 'https://pandas.pydata.org/'}
+      - {name: 'Reproducibility', url: 'https://en.wikipedia.org/wiki/Reproducibility'}
       - {name: 'RAG', url: 'https://github.com/Nick-Nunley/RAGToolBox'}
       - {name: 'Network analysis', url: 'https://en.wikipedia.org/wiki/Network_theory'}
       - {name: 'Simulation-based inference', url: 'https://simulation-based-inference.org/'}
@@ -35,7 +42,11 @@ skills:
     items:
       - {name: 'git', url: 'https://git-scm.com/'}
       - {name: 'CI/CD', url: 'https://en.wikipedia.org/wiki/CI/CD'}
+      - {name: 'Automation', url: 'https://en.wikipedia.org/wiki/Automation'}
+      - {name: 'API development', url: 'https://en.wikipedia.org/wiki/API'}
+      - {name: 'React web development', url: 'https://react.dev/'}
       - {name: 'Docker', url: 'https://www.docker.com/'}
+      - {name: 'Testing (unit & integration testing)', url: 'https://en.wikipedia.org/wiki/Software_testing'}
       - {name: 'Pipeline development and applications', url: 'https://www.atlassian.com/devops/devops-tools/devops-pipeline'}
       - {name: 'High-performance computing', url: 'https://en.wikipedia.org/wiki/High-performance_computing'}
 
@@ -47,8 +58,11 @@ skills:
 
   - category: 'Leadership'
     items:
-      - {name: 'Scientific communication', url: 'https://en.wikipedia.org/wiki/Science_communication'}
+      - {name: 'Project management', url: 'https://en.wikipedia.org/wiki/Project_management'}
+      - {name: 'Problem formulation', url: 'https://en.wikipedia.org/wiki/Problem_formulation'}
+      - {name: 'Cross-functional collaboration', url: 'https://en.wikipedia.org/wiki/Cross-functional_team'}
       - {name: 'Mentorship', url: 'https://www.ncbi.nlm.nih.gov/books/NBK552775/'}
+      - {name: 'Scientific communication', url: 'https://en.wikipedia.org/wiki/Science_communication'}
 
   - category: 'Experimental biology techniques'
     items:
