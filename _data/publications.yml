@@ -1,3 +1,37 @@
+- name: OGDHL promotes prostate cancer progression and regulates neuroendocrine marker
+    expression and nucleotide abundance
+  publication_year: '2026'
+  identifiers:
+    doi: 10.1158/1541-7786.MCR-25-0913
+  authors:
+  - Matthew J. Bernard
+  - Andrea Gallardo
+  - Angel Ruiz
+  - Johnny A. Diaz
+  - Nicholas M. Nunley
+  - Rachel N. Dove
+  - Shile Zhang
+  - Ernie Lee
+  - Kylie Y. Heering
+  - Grigor Varuzhanyan
+  - Sachi Bopardikar
+  - Takao Hashimoto
+  - Raag Agrawal
+  - Chad M. Smith
+  - Blake R. Wilde
+  - Nedas Matulionis
+  - Helen M. Richards
+  - Sandy Che-Eun S. Lee
+  - Marina N. Sharifi
+  - Joshua M. Lang
+  - Shuang G. Zhao
+  - Owen N. Witte
+  - Michael C. Haffner
+  - David B. Shackelford
+  - Paul C. Boutros
+  - Heather R. Christofk
+  - Andrew S. Goldstein
+  url: https://doi.org/10.1158/1541-7786.MCR-25-0913
 - name: Prostate lineage-specific metabolism governs luminal differentiation and response
     to antiandrogen treatment.
   publication_year: '2023'
