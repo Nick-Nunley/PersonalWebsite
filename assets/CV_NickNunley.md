@@ -14,7 +14,7 @@ Research Data Scientist & Software Engineer (Staff Research Associate)
 University of California Los Angeles (2022 - 2025)
 
   * Hybrid data scientist, software engineer, and molecular and cell biology researcher that helped lead computational biology, statistical analysis, and production-grade software development
-  * Built end-to-end computational pipelines and experimental research projects across transcriptomic analysis, metabolic profiling, and software development in two laboratories, resulting in two peer-reviewed publications, two open-source packages, and a poster:
+  * Built end-to-end computational pipelines and experimental research projects across transcriptomic analysis, metabolic profiling, and software development in two laboratories, resulting in three peer-reviewed publications, two open-source packages, and a poster:
     * [Goldstein lab](https://www.goldsteinlabucla.com/)
     * [Boutros lab](https://www.uclahealth.org/departments/urology/iuo/research/faculty-labs/dr-paul-boutros-lab)
   * Owned and led two distinct research projects in parallel and developed a third open-source software project spanning experimental design, data analysis, and software development
