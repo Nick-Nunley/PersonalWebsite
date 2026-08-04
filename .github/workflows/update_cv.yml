@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: "update-cv"
+  group: "site-deploy"
   cancel-in-progress: false
 
 jobs:
