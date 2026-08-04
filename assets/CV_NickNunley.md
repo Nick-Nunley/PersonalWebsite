@@ -2,39 +2,41 @@ CV
 
 [**Nicholas M. Nunley**](https://nick-nunley.github.io/PersonalWebsite/) | [nicknunley17@ucla.edu](mailto:nicknunley17@ucla.edu) | [GitHub](https://github.com/Nick-Nunley) | [Linkedin](https://www.linkedin.com/in/nicholas-nunley/) | Los Angeles, CA 
 
-Data scientist, software engineer, molecular biologist, and entrepreneur with
-experience in computational biology, statistical analysis, and production-
-grade software development; passionate about information theory, mathematics,
-and general problem solving
+Technical founder, data scientist, software engineer, and molecular biologist
+passionate about precision medicine, information theory, mathematics, problem
+solving, and operating at the business/product interface
 
 #### Experience
+
+Founder & E-commerce Technical Consultant
+
+Nunley Solutions (2026 - Present)
+
+  * Independent technical consultancy providing Shopify-native e-commerce engineering (custom Liquid and app development), automation, and analytics for client businesses
+  * Architected and led development and deployment of a dedicated wholesale Shopify storefront, including a custom Shopify app enforcing bespoke purchasing logic
+  * Designed and built a fully Shopify-native customer incentive program using Shopify Flow and Liquid
+  * Migrated ~7,200 flat B2B customer records into hierarchical, Shopify-native "company" data objects to support B2B commerce workflows
+  * Built operational automations spanning and surrounding Shopify, including a weekly one-way sync of ~95,000 customer records across multiple stores (Docker, AWS Fargate, AWS ECS, AWS Lambda) and GitHub Actions workflows for alerting
+  * Integrated and debugged third-party Shopify apps such as ShipStation for shipping and inventory management, Judge.me for reviews, BOGOS for promotional gifting, and Omnisend for marketing outreach
+  * Expanding into marketing analytics using GA4 to inform client marketing strategy
+  * Currently developing a product recommendation/calculator widget (FastAPI + Next.js + PostgreSQL) that maps user-input hair parameters to tailored product bundles
 
 Research Data Scientist & Software Engineer (Staff Research Associate)
 
 University of California Los Angeles (2022 - 2025)
 
-  * Hybrid data scientist, software engineer, and molecular and cell biology researcher that helped lead computational biology, statistical analysis, and production-grade software development
-  * Built end-to-end computational pipelines and experimental research projects across transcriptomic analysis, metabolic profiling, and software development in two laboratories, resulting in three peer-reviewed publications, two open-source packages, and a poster:
+  * Hybrid data scientist, software engineer, and molecular/cell biology researcher leading computational biology, statistical analysis, and production-grade software development across two laboratories, spanning transcriptomic analysis and metabolic profiling, resulting in three peer-reviewed publications, two open-source packages, and a poster:
     * [Goldstein lab](https://www.goldsteinlabucla.com/)
     * [Boutros lab](https://www.uclahealth.org/departments/urology/iuo/research/faculty-labs/dr-paul-boutros-lab)
-  * Owned and led two distinct research projects in parallel and developed a third open-source software project spanning experimental design, data analysis, and software development
-  * Architected and released an R datasets package containing processed transcriptional data from over 200 samples across seven different studies at release:
-    * Performed data curation and QA, detecting and correcting sample swaps in external datasets 
-    * Built an object-oriented S4 dataset class to expose metadata, sample information, and analysis methods 
-    * Added gene set enrichment analysis and meta-analysis features to the package 
-    * Implemented a gene-identifier mapping system for cross-species analysis without external databases 
-    * Resolved graphics rendering failures from memory limits and label collisions via custom downsampling and coordinate offsets 
-    * Extended lattice axes labeling to support logarithmic axes 
-    * Designed a custom colour-mapping engine for continuous and diverging gradients using affine RGB transformations 
-  * Mentored junior-level colleagues in Software Development Lifecycle (SDLC) practices, statistical modeling, & aseptic cell culture techniques
-  * Conducted peer code reviews across pull-request-based and ad hoc workflows related to data quality assurance, quality control, reproducibility, & analytical correctness
-  * Shipped RAGToolBox: a modular python package for Retrieval-Augmented Generation (RAG) prototyping
-    * Engineered 9 modules and 4 CLI entrypoints for loading, indexing, retrieval, and augmentation workflows 
-    * Shipped v0.1.0 with a tagged release and changelog 
-    * Deployed 3 CI/CD workflows via GitHub Actions to automate build, test, and release steps 
-    * Published the package to PyPI 
-    * Implemented continuous unit and integration testing to ~83% coverage 
-  * Managed mammalian cell culture and functional assays across ~50 experiments and ~8 prostate cancer model systems, including lentiviral transduction, immunoblotting, metabolic tracing, and viability assays
+  * Owned and led two research projects in parallel and developed a third open-source software project spanning experimental design, data analysis, and software development
+  * Architected and released an R datasets package containing processed transcriptional data from 200+ samples across seven studies:
+    * Performed data curation/QA (detecting and correcting sample swaps), built an object-oriented S4 dataset class, and added gene set enrichment and meta-analysis features plus a cross-species gene-identifier mapping system built without reliance on external databases 
+    * Engineered custom graphics solutions: resolved rendering failures via downsampling and coordinate offsets, extended lattice axes to support logarithmic scales, and designed a custom affine RGB colour-mapping engine 
+  * Shipped RAGToolBox, a modular Python package for Retrieval-Augmented Generation (RAG) prototyping:
+    * Engineered 9 modules and 4 CLI entrypoints, reaching ~83% test coverage, with 3 GitHub Actions CI/CD workflows automating build, test, and release 
+    * Released v0.1.0 with a tagged release and changelog, published to PyPI 
+  * Mentored junior colleagues in Software Development Lifecycle (SDLC) practices and statistical modeling; conducted peer code reviews for data quality assurance, reproducibility, and analytical correctness
+  * Managed mammalian cell culture and functional assays (lentiviral transduction, immunoblotting, metabolic tracing, viability assays) supporting the above research
 
 Lead K-12 Mathematics Instructor
 
