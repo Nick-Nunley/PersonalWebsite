@@ -45,7 +45,11 @@ skills:
       - {name: 'Automation', url: 'https://en.wikipedia.org/wiki/Automation'}
       - {name: 'API development', url: 'https://en.wikipedia.org/wiki/API'}
       - {name: 'React web development', url: 'https://react.dev/'}
+      - {name: 'Next.js', url: 'https://nextjs.org/'}
+      - {name: 'FastAPI', url: 'https://fastapi.tiangolo.com/'}
+      - {name: 'PostgreSQL', url: 'https://www.postgresql.org/'}
       - {name: 'Docker', url: 'https://www.docker.com/'}
+      - {name: 'AWS (Fargate, ECS, Lambda)', url: 'https://aws.amazon.com/'}
       - {name: 'Testing (unit & integration testing)', url: 'https://en.wikipedia.org/wiki/Software_testing'}
       - {name: 'Pipeline development and applications', url: 'https://www.atlassian.com/devops/devops-tools/devops-pipeline'}
       - {name: 'High-performance computing', url: 'https://en.wikipedia.org/wiki/High-performance_computing'}
@@ -55,6 +59,13 @@ skills:
       - {name: 'Nextflow', url: 'https://www.nextflow.io/docs/latest/overview.html'}
       - {name: 'Transcriptomics', url: 'https://en.wikipedia.org/wiki/Transcriptomics_technologies'}
       - {name: 'Metabolomics', url: 'https://en.wikipedia.org/wiki/Metabolomics'}
+
+  - category: 'E-commerce & business systems'
+    items:
+      - {name: 'Shopify Liquid', url: 'https://shopify.dev/docs/api/liquid'}
+      - {name: 'Shopify Admin API', url: 'https://shopify.dev/docs/api/admin'}
+      - {name: 'Shopify Flow', url: 'https://help.shopify.com/en/manual/shopify-flow'}
+      - {name: 'Marketing analytics (GA4)', url: 'https://support.google.com/analytics/answer/10089681'}
 
   - category: 'Leadership'
     items:
